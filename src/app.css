@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .header {
+        @apply flex justify-between mx-auto px-[35px] py-[10px] bg-gray-700;
+    }
+
+    .videoDes {
+        @apply m-[0.5rem_0] font-semibold leading-[20px] text-[17px];
+    }
+
+    .videoQMeta {
+        @apply flex justify-between text-[15px] font-normal m-[1.3rem_0_5px];
+    }
+
+    .inputdiv {
+        @apply w-full h-[50px] bg-white p-[2px] rounded-[5px] border border-solid border-[#e5e5e5] flex;
+    }
+
+    .inputelem {
+        @apply w-full h-full p-[0.3rem_0.7rem] font-medium text-[16px] outline-none
+    }
+
+    .pDrag::after {
+        position: absolute;
+        content: '';
+        right: 0;
+        top: -4px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #002333;
+        cursor: pointer;
+    }
+}
